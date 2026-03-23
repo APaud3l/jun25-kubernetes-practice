@@ -28,3 +28,13 @@ Practicing Kubernetes using minikube
 - NodePort: exposes the app on a port of the node, is best for local work
 - LoadBalancer: Distribute request loads across different pods
 - ControlPlane: Keeps it all working
+
+# Getting Started
+
+- `minikube start --driver=docker`: Creates and starts a local kubernetes cluster with Docker as the runtime environment
+
+- `kubectl cluster-info`: Shows where the K8s control plane is running 
+
+- `kubectl get nodes`: List of nodes that exist in the cluster
+
+- `kubectl create deployment demo-minikube --image=kicbase/echo-server:1.0`
