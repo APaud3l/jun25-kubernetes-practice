@@ -1,12 +1,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: demo-deployment-pracice
+  name: demo-deployment-practice
 spec:
   selector:
     matchLabels:
       app: demo-deployment
-  replicas: 2 
+  replicas: 4
   template:
     metadata:
       labels:
@@ -14,7 +14,7 @@ spec:
 
     spec:
       containers:
-        - name: demo-Deployment-Container
+        - name: demo-deployment-container
           image: nginx
           ports:
             - containerPort: 80
